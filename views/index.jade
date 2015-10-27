@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title=title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.js')
+        script(src='/javascripts/myscript.js')
+        meta(name="viewport", content="width=device-width, user-scalable=no")
+    body(ng-app="Acont")
+      p.error-block(ng-show="form.$invalid && form.url.$dirty") Enter a valid URL that starts with "http://" or "https://".
+        div.title
+           h1 Make short URL
+        div.form
+              form(name="form", novalidate)
+                input.url1(type="url",placeholder="Type any URL",ng-model="long_url",required,ng-required="true", name="url", ng-keyup="$event.keyCode == 13 && form.$valid ? short(long_url) : null")
+                input(type="button",class="button1",value="Short",ng-disabled="form.$invalid",ssc,ng-submit="short(long_url)")
+                input.url2(type="url",placeholder="Short URL of above URL",ng-model="short_url")
+                input(type="button",class="button2",value="Search")
+        p Try to search using this short url and you get same page        

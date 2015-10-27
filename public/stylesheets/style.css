@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+
+.url1,.url2{
+  width:600px;
+  padding:10px;
+}
+.url1{
+  margin-bottom:20px;
+}
+.button1,.button2{
+  width:4em;
+  height:1.8em;
+  font-size:1.5em;
+}
+body{
+    font-family: "Roboto Slab", sans-serif;
+    background: transparent;
+    background-image: linear-gradient(to bottom, #bbaadd, #819A2D);
+    background-repeat: no-repeat;
+    padding:100px;
+    padding-bottom:400px;
+}

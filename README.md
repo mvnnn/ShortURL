@@ -13,7 +13,7 @@
 - Jade (HTML rendering engine)
 
 ### Develop locally
-o
+
 Start the redis server
 
     $ redis-server
